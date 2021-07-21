@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="32dp"
+    android:background="#b2beb5"
+    tools:context=".StudentAddActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Student can be added"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"/>
+
+    <!--edit text field for adding name-->
+    <EditText
+        android:id="@+id/idEdtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your name" />
+
+    <!--edit text for adding class-->
+    <EditText
+        android:id="@+id/idEdtClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter your Class" />
+
+    <!--edit text for adding seat-->
+    <EditText
+        android:id="@+id/idEdtSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter your Seat Number" />
+
+    <!--button for adding data-->
+    <Button
+        android:id="@+id/idBtnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Send Data to API"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

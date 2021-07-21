@@ -1,5 +1,6 @@
 package com.kenneth.week_seven_task
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -12,9 +13,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         itemAdapter = ItemAdapter(listOf())
         binding.recycler.adapter = itemAdapter
 
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
                 itemAdapter.lists = items
                 itemAdapter.notifyDataSetChanged()
             })
+        }
+
+        binding.button.setOnClickListener {
+            val myIntent = Intent(this, StudentAddActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }
