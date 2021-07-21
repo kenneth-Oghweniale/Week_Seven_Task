@@ -13,6 +13,7 @@ class ItemAdapter(var lists: List<Item>): RecyclerView.Adapter<ItemAdapter.Items
         fun bind(list: Item){
             binding.textView.text = list.name
             binding.textView2.text = list.price.toString()
+            binding.textView1.text = list.id.toString()
 
         }
     }

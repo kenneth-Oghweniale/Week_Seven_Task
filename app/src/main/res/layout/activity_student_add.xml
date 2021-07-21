@@ -9,7 +9,6 @@
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="32dp"
-    android:background="#b2beb5"
     tools:context=".StudentAddActivity">
 
     <TextView
